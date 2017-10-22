@@ -1,0 +1,7 @@
+ nsupdate -d
+> server update.dyndns.com
+> zone $ZONE
+> key $KEY_NAME $KEY_HMAC
+> update add $HOST.$ZONE 60 A 10.0.0.1
+> send
+> quit
